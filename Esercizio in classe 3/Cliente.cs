@@ -14,9 +14,13 @@ namespace Esercizio_in_classe_3
         private char _sesso;
         private Abbonamento _abbonamento;
 
-        public Cliente()
+        public Cliente(string nome, string cognome, DateTime born, char sesso, DateTime inizio, DateTime fine)
         {
-
+            this._abbonamento = new Abbonamento(inizio, fine);
+            this._nome = nome;  
+            this._cognome = cognome;
+            this._bornDate = born;
+            this._sesso = sesso;
         }
     }
 }

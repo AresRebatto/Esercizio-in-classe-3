@@ -10,5 +10,11 @@ namespace Esercizio_in_classe_3
     {
         private DateTime _dataInizio;
         private DateTime _dataFine;
+
+        public Abbonamento(DateTime inizio, DateTime fine)
+        { 
+            this._dataInizio = inizio;
+            this._dataFine = fine;
+        }
     }
 }
