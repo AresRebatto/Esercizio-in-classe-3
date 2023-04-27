@@ -17,9 +17,9 @@ namespace Esercizio_in_classe_3
             this._nome = nome;
         }
 
-        public void AggiungiCorso(string nome, string descrizione, Istruttore istruttore)
+        public void AggiungiCorso(string nome, string descrizione, Istruttore istruttore, string[] giorni)
         {
-            Corso corso = new Corso(nome, descrizione, istruttore);
+            Corso corso = new Corso(nome, descrizione, istruttore, giorni);
             this._corso.Add(corso);
         } 
 
@@ -38,6 +38,11 @@ namespace Esercizio_in_classe_3
                 }
             }
 
+        }
+
+        public List<Corso> GetListCorsi()
+        {
+            return _corso;
         }
     }
 }
